@@ -1,20 +1,35 @@
 {
-  "name": "angular-devkit",
-  "version": "0.0.0",
+  "name": "@andresandoval/angular-devkit",
+  "version": "1.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:overlay-spinner": "ng build overlay-spinner --configuration production",
+    "prebuild:overlay-spinner": "rimraf dist/overlay-spinner",
+    "postbuild:overlay-spinner": "npm --prefix ./projects/overlay-spinner run build-scss"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/andresandoval/angular-devkit.git"
+  },
+  "author": "Andres Sandoval",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andresandoval/angular-devkit/issues"
+  },
+  "homepage": "https://github.com/andresandoval/angular-devkit#readme",
   "private": true,
   "dependencies": {
     "@angular/animations": "^18.1.0",
+    "@angular/cdk": "^18.1.2",
     "@angular/common": "^18.1.0",
     "@angular/compiler": "^18.1.0",
     "@angular/core": "^18.1.0",
     "@angular/forms": "^18.1.0",
+    "@angular/material": "^18.1.2",
     "@angular/platform-browser": "^18.1.0",
     "@angular/platform-browser-dynamic": "^18.1.0",
     "@angular/router": "^18.1.0",
@@ -23,6 +38,7 @@
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "^18.1.2",
     "@angular/cli": "^18.1.0",
     "@angular/compiler-cli": "^18.1.0",
     "@types/jasmine": "~5.1.0",
@@ -32,6 +48,8 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "ng-packagr": "^18.1.0",
+    "rimraf": "^6.0.1",
     "typescript": "~5.5.2"
   }
 }
