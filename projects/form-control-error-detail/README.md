@@ -1,6 +1,6 @@
 # NgxCommons
 
-Utils/helpers for working with Angular Form controls erros
+Utils/helpers for working with Angular Form controls errors
 
 ## Features
 
