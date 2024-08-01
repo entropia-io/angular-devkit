@@ -4,6 +4,12 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
+      "commons": [
+        "./dist/commons"
+      ],
+      "form-control-error-detail": [
+        "./dist/form-control-error-detail"
+      ],
       "overlay-spinner": [
         "./dist/overlay-spinner"
       ]

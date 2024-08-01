@@ -7,6 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "build:commons": "ng build commons --configuration production",
+    "build:form-control-error-detail": "ng build form-control-error-detail --configuration production",
     "build:overlay-spinner": "ng build overlay-spinner --configuration production",
     "prebuild:overlay-spinner": "rimraf dist/overlay-spinner",
     "postbuild:overlay-spinner": "npm --prefix ./projects/overlay-spinner run build-scss"
@@ -23,6 +25,7 @@
   "homepage": "https://github.com/andresandoval/angular-devkit#readme",
   "private": true,
   "dependencies": {
+    "@andresandoval/ngx-commons": "file:dist/commons",
     "@angular/animations": "^18.1.0",
     "@angular/cdk": "^18.1.2",
     "@angular/common": "^18.1.0",

@@ -19,6 +19,9 @@ const MENU_ENTRIES: MenuEntry[] = [
   {
     label: 'Overlay Spinner',
     path: 'overlay-spinner'
+  },{
+    label: 'Form Control Error Detail',
+    path: 'form-control-error-detail'
   }
 ];
 
