@@ -1,5 +1,5 @@
 {
-  "name": "material-file-uploader",
+  "name": "@andresandoval/ngx-material-file-uploader",
   "version": "0.0.1",
   "peerDependencies": {
     "@angular/common": "^18.1.0",
