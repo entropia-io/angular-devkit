@@ -1,0 +1,73 @@
+@import "../../../../shared/styles/flex-box";
+
+$main-border-width: 2px;
+$main-margin: 0.5rem;
+$main-padding: 0.5rem;
+$main-bg-color: #bbb;
+$border-radius: 0.8em;
+
+$placeholder-gap: 7px;
+$placeholder-border-width: 3px;
+$placeholder-border-color: #4f4fbd;
+
+:host {
+  width: 100%;
+}
+
+.drop-zone {
+
+  & {
+    background-color: rgba($main-bg-color, 0.2);
+    width: calc(100% - ($main-margin * 2) - ($main-padding * 2) - ($main-border-width * 2)); // 100% - margin*2 - padding*2  - border*2
+    margin: $main-margin;
+    padding: $main-padding;
+    border-radius: $border-radius;
+    border: $main-border-width dashed $main-bg-color;
+    position: relative;
+  }
+
+  .placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($main-bg-color, 0.2);
+    border-radius: $border-radius;
+
+    > div {
+      top: $placeholder-gap;
+      left: $placeholder-gap;
+      border: $placeholder-border-width dashed $placeholder-border-color;
+      border-radius: $border-radius;
+      width: calc(100% - ($placeholder-gap * 2) - ($placeholder-border-width * 2));
+      height: calc(100% - ($placeholder-gap * 2) - ($placeholder-border-width * 2));
+    }
+  }
+
+  &:not(.dragover) {
+    .placeholder {
+      visibility: hidden;
+    }
+  }
+
+  &.dragover {
+
+    &{
+      border-color: rgba($main-bg-color, 0.2);;
+    }
+    .content {
+      visibility: hidden;
+    }
+  }
+}
+
+.delete-button {
+  position: absolute;
+  right: 0.7rem;
+}
+
+.empty-list {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}

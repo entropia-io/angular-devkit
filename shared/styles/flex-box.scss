@@ -1,0 +1,51 @@
+$base-space: 0.25rem;
+
+@mixin generate-spacing($max) {
+  @for $i from 1 through $max {
+    &.space-x-#{$i} {
+      gap: calc(#{$base-space} * #{$i});
+    }
+    &.space-y-#{$i} {
+      gap: calc(#{$base-space} * #{$i});
+    }
+  }
+}
+
+.flex {
+  display: flex;
+
+  &.flex-row {
+    flex-direction: row;
+  }
+
+  &.flex-col {
+    flex-direction: column;
+  }
+
+  @include generate-spacing(10);
+}
+
+.flex-grow {
+  flex-grow: 1;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.d-none {
+  display: none !important;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100vh;
+}
+

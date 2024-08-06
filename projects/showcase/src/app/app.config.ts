@@ -1,4 +1,4 @@
-import {ApplicationConfig, provideZoneChangeDetection} from '@angular/core';
+import {ApplicationConfig, LOCALE_ID, provideZoneChangeDetection} from '@angular/core';
 import {provideRouter} from '@angular/router';
 
 import {routes} from './app.routes';
@@ -32,6 +32,7 @@ export const appConfig: ApplicationConfig = {
     {
       provide: FORM_CONTROL_ERROR_DETAILS_EXTRA_RESOLVER,
       useValue: formControlErrorDetailsExtraResolver
-    }
+    },
+    { provide: LOCALE_ID, useValue: 'ES-EC' }
   ]
 };

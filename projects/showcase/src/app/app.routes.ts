@@ -10,5 +10,10 @@ export const routes: Routes = [
     path: 'form-control-error-detail',
     loadComponent: () => import('./features/form-control-error-detail/form-control-error-detail.component')
       .then(r => r.FormControlErrorDetailComponent)
+  },
+  {
+    path: 'material-file-uploader',
+    loadComponent: () => import('./features/material-file-uploader/material-file-uploader.component')
+      .then(r => r.MaterialFileUploaderComponent)
   }
 ];

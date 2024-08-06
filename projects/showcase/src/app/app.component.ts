@@ -1,6 +1,6 @@
 import {Component, inject} from '@angular/core';
 import {BreakpointObserver, Breakpoints} from '@angular/cdk/layout';
-import {AsyncPipe} from '@angular/common';
+import {AsyncPipe, registerLocaleData} from '@angular/common';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
@@ -9,6 +9,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {Observable} from 'rxjs';
 import {map, shareReplay} from 'rxjs/operators';
 import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
+import localeFr from '@angular/common/locales/fr';
+import localeEs from '@angular/common/locales/es';
+
 
 interface MenuEntry {
   label: string;
@@ -19,9 +22,13 @@ const MENU_ENTRIES: MenuEntry[] = [
   {
     label: 'Overlay Spinner',
     path: 'overlay-spinner'
-  },{
+  }, {
     label: 'Form Control Error Detail',
     path: 'form-control-error-detail'
+  },
+  {
+    label: 'Material File Uploader',
+    path: 'material-file-uploader'
   }
 ];
 
@@ -52,4 +59,9 @@ export class AppComponent {
       map(result => result.matches),
       shareReplay()
     );
+
+  constructor() {
+    registerLocaleData(localeEs);
+    registerLocaleData(localeFr);
+  }
 }

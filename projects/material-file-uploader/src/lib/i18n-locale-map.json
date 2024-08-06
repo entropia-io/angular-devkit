@@ -1,0 +1,62 @@
+{
+  "EN": {
+    "@@last_modified": "Last modified",
+    "@@delete": "Delete",
+    "@@size": "Size",
+    "@@type": "Type",
+    "@@select_a_file": "Select a file",
+    "@@drag_and_drop_here": "Drag and drop here",
+    "@@or": "or",
+    "@@drop_here": "Drop here"
+  },
+  "ES": {
+    "@@last_modified": "Última modificación",
+    "@@delete": "Eliminar",
+    "@@size": "Tamaño",
+    "@@type": "Tipo",
+    "@@select_a_file": "Seleccionar un archivo",
+    "@@drag_and_drop_here": "Arrastrar y soltar aquí",
+    "@@or": "o",
+    "@@drop_here": "Soltar aquí"
+  },
+  "FR": {
+    "@@last_modified": "Dernière modification",
+    "@@delete": "Supprimer",
+    "@@size": "Taille",
+    "@@type": "Type",
+    "@@select_a_file": "Sélectionner un fichier",
+    "@@drag_and_drop_here": "Faites glisser et déposez ici",
+    "@@or": "ou",
+    "@@drop_here": "Déposez ici"
+  },
+  "JA": {
+    "@@last_modified": "最終更新日",
+    "@@delete": "削除",
+    "@@size": "サイズ",
+    "@@type": "タイプ",
+    "@@select_a_file": "ファイルを選択",
+    "@@drag_and_drop_here": "ここにドラッグアンドドロップ",
+    "@@or": "または",
+    "@@drop_here": "ここにドロップ"
+  },
+  "PT": {
+    "@@last_modified": "Última modificação",
+    "@@delete": "Excluir",
+    "@@size": "Tamanho",
+    "@@type": "Tipo",
+    "@@select_a_file": "Selecionar um arquivo",
+    "@@drag_and_drop_here": "Arraste e solte aqui",
+    "@@or": "ou",
+    "@@drop_here": "Solte aqui"
+  },
+  "ZH": {
+    "@@last_modified": "最后修改",
+    "@@delete": "删除",
+    "@@size": "大小",
+    "@@type": "类型",
+    "@@select_a_file": "选择文件",
+    "@@drag_and_drop_here": "拖拽到这里",
+    "@@or": "或",
+    "@@drop_here": "放开"
+  }
+}

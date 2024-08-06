@@ -1,0 +1,30 @@
+<div class="main-container flex flex-col align-center justify-center w-full space-y-3">
+  <div class="file-container flex flex-col">
+    <h4>single file</h4>
+    <ngx-material-file-uploader></ngx-material-file-uploader>
+  </div>
+  <div class="file-container flex flex-row space-x-3">
+    <div class="flex flex-col flex-grow">
+      <h4>single file</h4>
+      <ngx-material-file-uploader></ngx-material-file-uploader>
+    </div>
+    <div class="flex flex-col flex-grow">
+      <h4>single file</h4>
+      <ngx-material-file-uploader></ngx-material-file-uploader>
+    </div>
+  </div>
+  <div class="file-container flex flex-col">
+    <h4>multiple file</h4>
+    <ngx-material-file-uploader [multiple]="true"></ngx-material-file-uploader>
+  </div>
+  <div class="file-container flex flex-row space-x-3">
+    <div class="flex flex-col flex-grow">
+      <h4>multiple file</h4>
+      <ngx-material-file-uploader [multiple]="true"></ngx-material-file-uploader>
+    </div>
+    <div class="flex flex-col flex-grow">
+      <h4>multiple file</h4>
+      <ngx-material-file-uploader [multiple]="true"></ngx-material-file-uploader>
+    </div>
+  </div>
+</div>

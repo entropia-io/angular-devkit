@@ -10,6 +10,9 @@
       "form-control-error-detail": [
         "./dist/form-control-error-detail"
       ],
+      "material-file-uploader": [
+        "./dist/material-file-uploader"
+      ],
       "overlay-spinner": [
         "./dist/overlay-spinner"
       ]
