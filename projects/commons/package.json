@@ -1,6 +1,6 @@
 {
   "name": "@andresandoval/ngx-commons",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Common stuff for Angular projects",
   "peerDependencies": {
     "@angular/common": "^18.1.0",
