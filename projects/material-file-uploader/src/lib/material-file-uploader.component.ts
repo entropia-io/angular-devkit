@@ -1,5 +1,5 @@
 import {Component, Input} from '@angular/core';
-import {BytesPipe, I18N_LOCALE_MAP, I18nLocaleTranslatePipe} from 'commons';
+import {BytesPipe, I18N_LOCALE_MAP, I18nLocaleTranslatePipe} from '@andresandoval/ngx-commons';
 import * as i18nLocaleMap from './i18n-locale-map.json'
 import {DragAndDropDirective} from './drag-and-drop.directive';
 import {MatListModule} from '@angular/material/list';
