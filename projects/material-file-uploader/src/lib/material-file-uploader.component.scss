@@ -18,8 +18,7 @@ $placeholder-border-color: #4f4fbd;
 
   & {
     background-color: rgba($main-bg-color, 0.2);
-    width: calc(100% - ($main-margin * 2) - ($main-padding * 2) - ($main-border-width * 2)); // 100% - margin*2 - padding*2  - border*2
-    margin: $main-margin;
+    margin: $main-margin 0;
     padding: $main-padding;
     border-radius: $border-radius;
     border: $main-border-width dashed $main-bg-color;

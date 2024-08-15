@@ -1,4 +1,4 @@
-import {Component, Input} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {BytesPipe, I18N_LOCALE_MAP, I18nLocaleTranslatePipe} from '@andresandoval/ngx-commons';
 import * as i18nLocaleMap from './i18n-locale-map.json'
 import {DragAndDropDirective} from './drag-and-drop.directive';
@@ -36,6 +36,10 @@ export class MaterialFileUploaderComponent {
   public readonly files: File[] = [];
 
   private _multiple: boolean | null = null;
+  private _accept: string | null = null;
+
+  @Output('onFileChange')
+  public readonly onFileChangeEventEmitter: EventEmitter<File[]> = new EventEmitter<File[]>();
 
   public addFiles(files: File[]): void {
     if (!!files && files.length > 0) {
@@ -50,6 +54,7 @@ export class MaterialFileUploaderComponent {
           this.files.push(files[0]);
         }
       }
+      this.onFileChangeEventEmitter.emit(this.files);
     }
   }
 
@@ -77,5 +82,12 @@ export class MaterialFileUploaderComponent {
     this._multiple = multiple;
   }
 
-  protected readonly i18nLocaleMap = i18nLocaleMap;
+  public get accept(): string {
+    return this._accept || '';
+  }
+
+  @Input('accept')
+  public set accept(accept: string) {
+    this._accept = accept;
+  }
 }

@@ -1,5 +1,5 @@
 <input type="file" class="d-none" [multiple]="multiple"
-       (change)="onFileSelected($event)" #fileInput>
+       (change)="onFileSelected($event)" [accept]="accept" #fileInput>
 <div class="drop-zone w-full" ngxDragAndDrop (filesDropped)="addFiles($event)">
   <div class="content w-full flex flex-col space-y-3">
     @if (files.length > 0) {
