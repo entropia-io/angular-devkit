@@ -36,6 +36,7 @@ export class MaterialFileUploaderComponent {
   public readonly files: File[] = [];
 
   private _multiple: boolean | null = null;
+  private _disabled: boolean | null = null;
   private _accept: string | null = null;
 
   @Output('onFileChange')
@@ -71,15 +72,25 @@ export class MaterialFileUploaderComponent {
 
   public deleteFile(index: number): void {
     this.files.splice(index, 1);
+    this.onFileChangeEventEmitter.emit(this.files);
   }
 
   public get multiple(): boolean {
     return this._multiple === true;
   }
 
+  public get disabled(): boolean {
+    return this._disabled === true;
+  }
+
   @Input('multiple')
   public set multiple(multiple: boolean) {
     this._multiple = multiple;
+  }
+
+  @Input('disabled')
+  public set disabled(disabled: boolean) {
+    this._disabled = disabled;
   }
 
   public get accept(): string {

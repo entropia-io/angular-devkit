@@ -1,4 +1,4 @@
-<input type="file" class="d-none" [multiple]="multiple"
+<input type="file" class="d-none" [multiple]="multiple" [disabled]="disabled"
        (change)="onFileSelected($event)" [accept]="accept" #fileInput>
 <div class="drop-zone w-full" ngxDragAndDrop (filesDropped)="addFiles($event)">
   <div class="content w-full flex flex-col space-y-3">
@@ -11,7 +11,7 @@
             <div matListItemLine>
               <b>{{ '@@last_modified' | i18nLocaleTranslate }}:</b> {{ file.lastModified | date }}
               <button mat-icon-button class="delete-button" (click)="deleteFile(index)"
-                      matTooltip="{{'@@delete' | i18nLocaleTranslate}}">
+                      matTooltip="{{'@@delete' | i18nLocaleTranslate}}" [disabled]="disabled">
                 <mat-icon>delete</mat-icon>
               </button>
             </div>
@@ -25,7 +25,7 @@
           <mat-divider></mat-divider>
         }
       </mat-list>
-      <button mat-raised-button color="primary" (click)="fileInput.click()">
+      <button mat-raised-button color="primary" (click)="fileInput.click()" [disabled]="disabled">
         {{ '@@select_a_file' | i18nLocaleTranslate }}
         <mat-icon>attach_file</mat-icon>
       </button>
@@ -41,7 +41,7 @@
         <div>
           {{ '@@or' | i18nLocaleTranslate }}
         </div>
-        <button mat-raised-button color="primary" (click)="fileInput.click()">
+        <button mat-raised-button color="primary" (click)="fileInput.click()" [disabled]="disabled">
           {{ '@@select_a_file' | i18nLocaleTranslate }}
           <mat-icon>attach_file</mat-icon>
         </button>
