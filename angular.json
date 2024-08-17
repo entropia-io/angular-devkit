@@ -3,39 +3,6 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "overlay-spinner": {
-      "projectType": "library",
-      "root": "projects/overlay-spinner",
-      "sourceRoot": "projects/overlay-spinner/src",
-      "prefix": "asm",
-      "architect": {
-        "build": {
-          "builder": "@angular-devkit/build-angular:ng-packagr",
-          "options": {
-            "project": "projects/overlay-spinner/ng-package.json"
-          },
-          "configurations": {
-            "production": {
-              "tsConfig": "projects/overlay-spinner/tsconfig.lib.prod.json"
-            },
-            "development": {
-              "tsConfig": "projects/overlay-spinner/tsconfig.lib.json"
-            }
-          },
-          "defaultConfiguration": "production"
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "tsConfig": "projects/overlay-spinner/tsconfig.spec.json",
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ]
-          }
-        }
-      }
-    },
     "showcase": {
       "projectType": "application",
       "schematics": {
@@ -89,7 +56,7 @@
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
               "projects/showcase/src/styles.scss",
-              "dist/overlay-spinner/styles/style.scss"
+              "dist/entropia-io/ngx-overlay-spinner/styles/style.scss"
             ],
             "scripts": []
           },
@@ -156,23 +123,23 @@
         }
       }
     },
-    "form-control-error-detail": {
+    "@entropia-io/ngx-commons": {
       "projectType": "library",
-      "root": "projects/form-control-error-detail",
-      "sourceRoot": "projects/form-control-error-detail/src",
-      "prefix": "lib",
+      "root": "projects/entropia-io/ngx-commons",
+      "sourceRoot": "projects/entropia-io/ngx-commons/src",
+      "prefix": "npx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/form-control-error-detail/ng-package.json"
+            "project": "projects/entropia-io/ngx-commons/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/form-control-error-detail/tsconfig.lib.prod.json"
+              "tsConfig": "projects/entropia-io/ngx-commons/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/form-control-error-detail/tsconfig.lib.json"
+              "tsConfig": "projects/entropia-io/ngx-commons/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -180,7 +147,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/form-control-error-detail/tsconfig.spec.json",
+            "tsConfig": "projects/entropia-io/ngx-commons/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -189,23 +156,23 @@
         }
       }
     },
-    "commons": {
+    "@entropia-io/ngx-form-utils": {
       "projectType": "library",
-      "root": "projects/commons",
-      "sourceRoot": "projects/commons/src",
-      "prefix": "lib",
+      "root": "projects/entropia-io/ngx-form-utils",
+      "sourceRoot": "projects/entropia-io/ngx-form-utils/src",
+      "prefix": "npx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/commons/ng-package.json"
+            "project": "projects/entropia-io/ngx-form-utils/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/commons/tsconfig.lib.prod.json"
+              "tsConfig": "projects/entropia-io/ngx-form-utils/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/commons/tsconfig.lib.json"
+              "tsConfig": "projects/entropia-io/ngx-form-utils/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -213,7 +180,7 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/commons/tsconfig.spec.json",
+            "tsConfig": "projects/entropia-io/ngx-form-utils/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"
@@ -222,23 +189,23 @@
         }
       }
     },
-    "material-file-uploader": {
+    "@entropia-io/ngx-material-file-uploader": {
       "projectType": "library",
-      "root": "projects/material-file-uploader",
-      "sourceRoot": "projects/material-file-uploader/src",
-      "prefix": "lib",
+      "root": "projects/entropia-io/ngx-material-file-uploader",
+      "sourceRoot": "projects/entropia-io/ngx-material-file-uploader/src",
+      "prefix": "npx",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/material-file-uploader/ng-package.json"
+            "project": "projects/entropia-io/ngx-material-file-uploader/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/material-file-uploader/tsconfig.lib.prod.json"
+              "tsConfig": "projects/entropia-io/ngx-material-file-uploader/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/material-file-uploader/tsconfig.lib.json"
+              "tsConfig": "projects/entropia-io/ngx-material-file-uploader/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -246,7 +213,40 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "tsConfig": "projects/material-file-uploader/tsconfig.spec.json",
+            "tsConfig": "projects/entropia-io/ngx-material-file-uploader/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        }
+      }
+    },
+    "@entropia-io/ngx-overlay-spinner": {
+      "projectType": "library",
+      "root": "projects/entropia-io/ngx-overlay-spinner",
+      "sourceRoot": "projects/entropia-io/ngx-overlay-spinner/src",
+      "prefix": "npx",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/entropia-io/ngx-overlay-spinner/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/entropia-io/ngx-overlay-spinner/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/entropia-io/ngx-overlay-spinner/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/entropia-io/ngx-overlay-spinner/tsconfig.spec.json",
             "polyfills": [
               "zone.js",
               "zone.js/testing"

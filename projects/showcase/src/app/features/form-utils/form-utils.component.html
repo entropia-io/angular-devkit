@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="w-full">
+    <mat-form-field appearance="fill" color="primary" class="w-full">
+      <mat-label>Required form control</mat-label>
+      <input matInput [formControl]="requiredFormCtrl" placeholder="FormControl" type="text">
+      <mat-error>
+        <ngx-form-control-error-message [control]="requiredFormCtrl"></ngx-form-control-error-message>
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="w-full">
+    <mat-form-field appearance="fill" color="primary" class="w-full">
+      <mat-label>Numeric form control</mat-label>
+      <input matInput [formControl]="numericFormCtrl" placeholder="FormControl" type="text">
+      <mat-error>
+        <ngx-form-control-error-message [control]="numericFormCtrl"></ngx-form-control-error-message>
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="w-full">
+    <mat-form-field appearance="fill" color="primary" class="w-full">
+      <mat-label>Numeric decimal form control (precision 3)</mat-label>
+      <input matInput [formControl]="decimalFormCtrl" placeholder="FormControl" type="text">
+      <mat-error>
+        <ngx-form-control-error-message [control]="decimalFormCtrl"></ngx-form-control-error-message>
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="w-full">
+    <mat-form-field appearance="fill" color="primary" class="w-full">
+      <mat-label>Custom validator form control (format AAA-000)</mat-label>
+      <input matInput [formControl]="customValidatorFormCtrl" placeholder="FormControl" type="text">
+      <mat-error>
+        <ngx-form-control-error-message [control]="customValidatorFormCtrl"></ngx-form-control-error-message>
+      </mat-error>
+    </mat-form-field>
+  </div>
+  <div class="w-full">
+    <mat-form-field appearance="fill" color="primary" class="w-full">
+      <mat-label>Custom validator form control (format AAA-000) + Required</mat-label>
+      <input matInput [formControl]="customValidatorRequiredFormCtrl" placeholder="FormControl" type="text">
+      <mat-error>
+        <ngx-form-control-error-message [control]="customValidatorRequiredFormCtrl"></ngx-form-control-error-message>
+      </mat-error>
+    </mat-form-field>
+  </div>
+</div>

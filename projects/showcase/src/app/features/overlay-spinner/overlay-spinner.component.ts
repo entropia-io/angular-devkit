@@ -1,6 +1,6 @@
 import {Component, inject} from '@angular/core';
 import {MatButton} from '@angular/material/button';
-import {OverlaySpinnerRef, OverlaySpinnerService} from 'overlay-spinner';
+import {OverlaySpinnerRef, OverlaySpinnerService} from '@entropia-io/ngx-overlay-spinner';
 
 @Component({
   selector: 'asm-overlay-spinner',

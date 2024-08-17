@@ -7,9 +7,9 @@ export const routes: Routes = [
       .then(r => r.OverlaySpinnerComponent)
   },
   {
-    path: 'form-control-error-detail',
-    loadComponent: () => import('./features/form-control-error-detail/form-control-error-detail.component')
-      .then(r => r.FormControlErrorDetailComponent)
+    path: 'form-utils',
+    loadComponent: () => import('./features/form-utils/form-utils.component')
+      .then(r => r.FormUtilsComponent)
   },
   {
     path: 'material-file-uploader',

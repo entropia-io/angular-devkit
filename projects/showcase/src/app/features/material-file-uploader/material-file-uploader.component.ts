@@ -1,9 +1,7 @@
 import {Component} from '@angular/core';
-import {MaterialFileUploaderComponent as NgxMaterialFileUploaderComponent} from 'material-file-uploader';
-
-/*import {
+import {
   MaterialFileUploaderComponent as NgxMaterialFileUploaderComponent
-} from '../../../../../material-file-uploader/src/public-api';*/
+} from '@entropia-io/ngx-material-file-uploader';
 
 @Component({
   selector: 'asm-material-file-uploader',

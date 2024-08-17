@@ -5,7 +5,7 @@ import {routes} from './app.routes';
 import {provideAnimationsAsync} from '@angular/platform-browser/animations/async';
 import {ErrorStateMatcher} from '@angular/material/core';
 import {AbstractControl, FormControl, FormGroupDirective, NgForm} from '@angular/forms';
-import {FORM_CONTROL_ERROR_DETAILS_EXTRA_RESOLVER} from 'form-control-error-detail';
+import {FORM_CONTROL_ERROR_DETAILS_EXTRA_RESOLVER} from '@entropia-io/ngx-form-utils';
 
 class ShowOnTouchedOrDirtyErrorStateMatcher implements ErrorStateMatcher {
   isErrorState(control: FormControl | null, form: FormGroupDirective | NgForm | null): boolean {

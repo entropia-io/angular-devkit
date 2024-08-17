@@ -23,8 +23,8 @@ const MENU_ENTRIES: MenuEntry[] = [
     label: 'Overlay Spinner',
     path: 'overlay-spinner'
   }, {
-    label: 'Form Control Error Detail',
-    path: 'form-control-error-detail'
+    label: 'Form Utils',
+    path: 'form-utils'
   },
   {
     label: 'Material File Uploader',

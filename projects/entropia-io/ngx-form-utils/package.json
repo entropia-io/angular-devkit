@@ -1,0 +1,14 @@
+{
+  "name": "@entropia-io/ngx-form-utils",
+  "version": "0.0.1",
+  "description": "Utils/helpers for working with Angular Form controls errors",
+  "peerDependencies": {
+    "@angular/common": "^18.1.0",
+    "@angular/core": "^18.1.0",
+    "@entropia-io/ngx-commons": "^0.0.1"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}

@@ -4,17 +4,23 @@
   "compileOnSave": false,
   "compilerOptions": {
     "paths": {
-      "commons": [
-        "./dist/commons"
+      "@entropia-io/ngx-commons/*": [
+        "./dist/entropia-io/ngx-commons/*"
       ],
-      "form-control-error-detail": [
-        "./dist/form-control-error-detail"
+      "@entropia-io/ngx-commons": [
+        "./dist/entropia-io/ngx-commons"
       ],
-      "material-file-uploader": [
-        "./dist/material-file-uploader"
+      "@entropia-io/ngx-form-utils/*": [
+        "./dist/entropia-io/ngx-form-utils/*"
       ],
-      "overlay-spinner": [
-        "./dist/overlay-spinner"
+      "@entropia-io/ngx-form-utils": [
+        "./dist/entropia-io/ngx-form-utils"
+      ],
+      "@entropia-io/ngx-material-file-uploader": [
+        "./dist/entropia-io/ngx-material-file-uploader"
+      ],
+      "@entropia-io/ngx-overlay-spinner": [
+        "./dist/entropia-io/ngx-overlay-spinner"
       ]
     },
     "outDir": "./dist/out-tsc",
