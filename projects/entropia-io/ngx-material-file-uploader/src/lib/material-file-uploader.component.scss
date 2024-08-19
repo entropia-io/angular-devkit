@@ -23,6 +23,7 @@ $placeholder-border-color: #4f4fbd;
     border-radius: $border-radius;
     border: $main-border-width dashed $main-bg-color;
     position: relative;
+    box-sizing: border-box;
   }
 
   .placeholder {

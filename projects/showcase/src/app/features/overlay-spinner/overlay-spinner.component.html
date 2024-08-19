@@ -1,3 +1,10 @@
 <div class="container">
-  <button mat-raised-button (click)="showSpinner()">Show Spinner for 5 seconds</button>
+  <button mat-raised-button
+          (click)="showSpinner()">
+    @if (showingOverlay) {
+      Hiding on {{ remainingTime }} seconds
+    } @else {
+      Show Spinner for {{ timeout }} seconds
+    }
+  </button>
 </div>
