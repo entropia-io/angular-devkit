@@ -1,6 +1,6 @@
 import {Inject, Pipe, PipeTransform} from '@angular/core';
 import {I18nManagerService} from './i18n-manager.service';
-import {formatString} from '@entropia-io/commons-js/utils/string-utils';
+import {formatString} from '@entropia-io/commons-js/common/utils/string-utils';
 import {I18N_LOCALE_MAP, LocaleMap, LocaleTranslations} from './models';
 
 

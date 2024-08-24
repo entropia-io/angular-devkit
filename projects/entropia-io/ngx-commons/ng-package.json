@@ -3,8 +3,5 @@
   "dest": "../../../dist/entropia-io/ngx-commons",
   "lib": {
     "entryFile": "public-api.ts"
-  },
-  "allowedNonPeerDependencies": [
-    "@entropia-io/commons-js"
-  ]
+  }
 }
