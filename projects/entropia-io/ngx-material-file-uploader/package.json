@@ -1,11 +1,11 @@
 {
   "name": "@entropia-io/ngx-material-file-uploader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^18.1.0",
     "@angular/core": "^18.1.0",
     "@angular/material": "^18.1.2",
-    "@entropia-io/ngx-commons": "^0.0.1"
+    "@entropia-io/ngx-commons": "^0.0.3"
   },
   "dependencies": {
     "tslib": "^2.3.0"
