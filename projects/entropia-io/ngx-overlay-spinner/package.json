@@ -3,7 +3,7 @@
   "scripts": {
     "build-scss": "sass --style=compressed ./src/lib/style.scss ../../../dist/entropia-io/ngx-overlay-spinner/styles/style.css"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "peerDependencies": {
     "@angular/common": "^19.0.5",
     "@angular/core": "^19.0.5"
