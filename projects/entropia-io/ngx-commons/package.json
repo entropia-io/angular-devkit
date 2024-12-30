@@ -1,6 +1,6 @@
 {
   "name": "@entropia-io/ngx-commons",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Common stuff for Angular projects",
   "peerDependencies": {
     "@angular/common": "^19.0.5",
