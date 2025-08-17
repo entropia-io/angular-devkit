@@ -8,6 +8,15 @@ ng g library @entropia-io/lib-name --prefix=npx
 
 add a build script at `package.json` for easy deploy
 
+## Setup npm registry access
+
+1. Generate a granular token for @entropia with:  read and write access to scope @entropia (no package access required)
+2. Create or add token to ~/.npmrc file:
+   ```npmrc
+   @entropia-io:registry=https://registry.npmjs.org/
+   //registry.npmjs.org/:_authToken=<NPM_TOKEN>
+   ```
+
 ## How to publish a library
 
 1. Commit all previous changes, so repo will be clean
