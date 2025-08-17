@@ -1,6 +1,6 @@
-import {Inject, Injectable, RendererFactory2} from '@angular/core';
+import {DOCUMENT, Inject, Injectable, RendererFactory2} from '@angular/core';
 import {OverlaySpinnerRef} from './overlay-spinner-ref';
-import {DOCUMENT} from '@angular/common';
+
 
 const spinner: string = `
 <div class="spinner">

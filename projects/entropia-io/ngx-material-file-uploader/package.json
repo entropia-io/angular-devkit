@@ -2,9 +2,9 @@
   "name": "@entropia-io/ngx-material-file-uploader",
   "version": "0.0.3",
   "peerDependencies": {
-    "@angular/common": "^19.0.5",
-    "@angular/core": "^19.0.5",
-    "@angular/material": "^19.0.4",
+    "@angular/common": "^20.1.7",
+    "@angular/core": "^20.1.7",
+    "@angular/material": "^20.1.6",
     "@entropia-io/ngx-commons": "^0.0.4"
   },
   "dependencies": {

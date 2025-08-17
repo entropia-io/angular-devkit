@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {MatButton} from '@angular/material/button';
 import {MatError, MatFormField, MatLabel} from '@angular/material/form-field';
 import {MatInput} from '@angular/material/input';
 import {
@@ -10,7 +9,6 @@ import {
   ValidatorFn,
   Validators
 } from '@angular/forms';
-import {MatIcon} from '@angular/material/icon';
 import {FormControlErrorMessageComponent as NgxFormControlErrorMessageComponent} from '@entropia-io/ngx-form-utils';
 import {NgxValidators} from '@entropia-io/ngx-form-utils/validators';
 
@@ -19,11 +17,9 @@ import {NgxValidators} from '@entropia-io/ngx-form-utils/validators';
   selector: 'asm-form-utils',
   standalone: true,
   imports: [
-    MatButton,
     MatFormField,
     MatInput,
     ReactiveFormsModule,
-    MatIcon,
     MatError,
     MatLabel,
     NgxFormControlErrorMessageComponent
